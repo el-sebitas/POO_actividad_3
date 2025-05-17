@@ -10,7 +10,19 @@ public class CasaCerrada extends CasaUrbana{
         this.areas_no_comunes = areas_no_comunes;
     }
 
-    void valor() {
-        this.val_inmueble = this.area * 2500000;
+//    void valor() {
+//        this.val_inmueble = this.area * 2500000;
+//    }
+
+    @Override
+    protected void valor() {
+        super.valor(2500000);
+    }
+
+    @Override
+    protected void imprimir() {
+        super.imprimir();
+        System.out.println("Valor de administracion: " + valor_administracion);
+        System.out.println("Areas no cmunes: " + areas_no_comunes);
     }
 }

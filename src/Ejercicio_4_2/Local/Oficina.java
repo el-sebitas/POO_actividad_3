@@ -8,7 +8,18 @@ public class Oficina extends Local{
         this.gobierno = gobierno;
     }
 
-    void valor() {
-        this.val_inmueble = this.area * 3500000;
+//    void valor() {
+//        this.val_inmueble = this.area * 3500000;
+//    }
+
+    @Override
+    protected void valor() {
+        super.valor(3500000);
+    }
+
+    @Override
+    protected void imprimir() {
+        super.imprimir();
+        System.out.println("Gobierno: " + gobierno);
     }
 }

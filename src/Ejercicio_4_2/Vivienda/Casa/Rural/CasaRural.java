@@ -11,7 +11,19 @@ public class CasaRural extends Casa {
         this.dist_cabecera_municipal = dist_cabecera_municipal;
     }
 
-    void valor() {
-        this.val_inmueble = this.area * 1500000;
+//    void valor() {
+//        this.val_inmueble = this.area * 1500000;
+//    }
+
+    @Override
+    protected void valor() {
+        super.valor(1500000);
+    }
+
+    @Override
+    protected void imprimir() {
+        super.imprimir();
+        System.out.println("Distancia de la cabecera municipal: " + dist_cabecera_municipal);
+        System.out.println("Altura sobre el nivel del mar: " + altitud);
     }
 }

@@ -1,11 +1,11 @@
 package Ejercicio_4_1;
 
 public class Cuenta {
-    float saldo;
-    int n_consignaciones;
-    int n_retiros;
-    float tasa_anual;
-    float comision_mensual;
+    protected float saldo;
+    protected int n_consignaciones;
+    protected int n_retiros;
+    protected float tasa_anual;
+    protected float comision_mensual;
 
     public Cuenta(float saldo, float tasa_anual) {
         this.saldo = saldo;

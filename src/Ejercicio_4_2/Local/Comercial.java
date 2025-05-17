@@ -8,7 +8,18 @@ public class Comercial extends Local{
         this.centro_comercial = centro_comercial;
     }
 
-    void valor() {
-        this.val_inmueble = this.area * 3000000;
+//    void valor() {
+//        this.val_inmueble = this.area * 3000000;
+//    }
+
+    @Override
+    protected void valor() {
+        super.valor(3000000);
+    }
+
+    @Override
+    protected void imprimir() {
+        super.imprimir();
+        System.out.println("Centro comercial: " + centro_comercial);
     }
 }

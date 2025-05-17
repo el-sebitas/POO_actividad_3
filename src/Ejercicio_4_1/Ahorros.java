@@ -1,7 +1,7 @@
 package Ejercicio_4_1;
 
 public class Ahorros extends Cuenta{
-    boolean activa;
+    protected boolean activa;
 
     public Ahorros(float saldo, float tasa_anual) {
         super(saldo, tasa_anual);

@@ -10,7 +10,18 @@ public class AptoFamiliar extends Apartamento {
         this.valor_administracion = valor_administracion;
     }
 
-    void valor() {
-        this.val_inmueble = this.area * 2000000;
+//    void valor() {
+//        this.val_inmueble = this.area * 2000000;
+//    }
+
+    @Override
+    protected void valor() {
+        super.valor(2000000);
+    }
+
+    @Override
+    protected void imprimir() {
+        super.imprimir();
+        System.out.println("Valor administracion: " + valor_administracion);
     }
 }

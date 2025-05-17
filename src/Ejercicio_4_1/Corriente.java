@@ -1,7 +1,7 @@
 package Ejercicio_4_1;
 
 public class Corriente extends Cuenta{
-    float sobregiro;
+    protected float sobregiro;
 
     public Corriente(float saldo, float tasa_anual) {
         super(saldo, tasa_anual);

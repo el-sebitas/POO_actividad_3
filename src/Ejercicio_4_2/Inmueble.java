@@ -1,6 +1,6 @@
 package Ejercicio_4_2;
 
-public class Inmueble {
+public abstract class Inmueble {
     protected int id;
     protected int area;
     protected String direccion;
@@ -11,5 +11,16 @@ public class Inmueble {
         this.direccion = direccion;
         this.id = id;
         this.val_inmueble = val_inmueble;
+    }
+
+    protected void imprimir() {
+        System.out.println("Identificador inmobiliario: " + id);
+        System.out.println("Area: " + area);
+        System.out.println("Direccion: " + direccion);
+        System.out.println("Valor de inmueble: $" + val_inmueble);
+    }
+
+    protected void valor(double val_area) {
+        this.val_inmueble = this.area * val_area;
     }
 }

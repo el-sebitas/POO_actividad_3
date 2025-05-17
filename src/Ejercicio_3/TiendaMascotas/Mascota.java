@@ -10,4 +10,10 @@ public class Mascota {
         this.edad = edad;
         this.nombre = nombre;
     }
+
+    protected void imprimir() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Color: " + color);
+    }
 }
