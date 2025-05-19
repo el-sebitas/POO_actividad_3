@@ -1,8 +1,8 @@
 package Ejercicio_4;
 
 public class Persona {
-    protected String nombre;
-    protected String direccion;
+    public String nombre;
+    public String direccion;
 
     public Persona(String direccion, String nombre) {
         this.direccion = direccion;

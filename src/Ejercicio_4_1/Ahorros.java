@@ -32,6 +32,8 @@ public class Ahorros extends Cuenta{
         if (this.n_retiros > 4) {
             this.comision_mensual = 1000;
             super.extractoMensual();
+        } else {
+            super.extractoMensual();
         }
 
         if (this.saldo < 10000) {

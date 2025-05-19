@@ -1,8 +1,8 @@
 package Ejercicio_4;
 
 public class Profesor extends Persona {
-    protected String departamento;
-    protected String categoria;
+    public String departamento;
+    public String categoria;
 
     public Profesor(String direccion, String nombre, String departamento, String categoria) {
         super(direccion, nombre);

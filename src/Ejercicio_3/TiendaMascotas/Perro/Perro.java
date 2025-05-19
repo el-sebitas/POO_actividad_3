@@ -8,7 +8,7 @@ public class Perro extends Mascota {
         super(color, edad, nombre);
     }
 
-    static void sonido() {
+    public static void sonido() {
         System.out.println("Los perros ladran");
     }
 }

@@ -1,8 +1,8 @@
 package Ejercicio_4;
 
 public class Estudiante extends Persona{
-    protected String carrera;
-    protected int semestre;
+    public String carrera;
+    public int semestre;
 
     public Estudiante(String direccion, String nombre, String carrera, int semestre) {
         super(direccion, nombre);

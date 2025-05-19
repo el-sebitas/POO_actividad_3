@@ -6,14 +6,14 @@ public abstract class Inmueble {
     protected String direccion;
     protected double val_inmueble;
 
-    public Inmueble(int area, String direccion, int id, double val_inmueble) {
+    public Inmueble(int area, String direccion, int id) {
         this.area = area;
         this.direccion = direccion;
         this.id = id;
         this.val_inmueble = val_inmueble;
     }
 
-    protected void imprimir() {
+    public void imprimir() {
         System.out.println("Identificador inmobiliario: " + id);
         System.out.println("Area: " + area);
         System.out.println("Direccion: " + direccion);
